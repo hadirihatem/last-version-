@@ -1,0 +1,66 @@
+
+section{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+   display: flex;
+   border: 2px solid #000;
+   background-color: #000;
+
+}
+.Secteur{
+    height: 100vh;
+    
+}
+
+section .slide{
+position: relative;
+background-color: #0f0;
+height: 100%;
+flex: 1;
+border-right:2px solid #000 ;
+overflow: hidden;
+transition: 0.5s ease-in-out;
+}
+section .slide:last-child{
+    border-right: none;
+}
+section .slide:hover{
+   flex-grow: 5;
+
+}
+section .slide:nth-child(1){
+    background: url(../websiteimages/Imagessecteur/agriculture.jpg);
+    background-position:center  ;
+    /* background-size:initial */
+  
+}
+section .slide:nth-child(2){
+    background-image: url(../websiteimages/Imagessecteur/Electronique.jpg);
+    background-position:center  ;
+}
+section .slide:nth-child(3){
+    background-image: url(../websiteimages/Imagessecteur/Mécanique.jpg);
+    background-position:center  ;
+  
+}
+
+section .slide .content{
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    padding:30px ;
+    background: #000;
+    color:#fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(100px);
+}
+section .slide:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+}

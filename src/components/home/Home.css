@@ -1,0 +1,70 @@
+.Home{
+  height: 100vh;
+  position: relative;
+
+  
+}
+
+
+.H-title{
+  text-align: center;
+  font-family: 'Estonia', cursive;
+color:rgb(0, 26, 255);
+padding-right: 30px;
+font-size: 3rem;
+}
+.logo{
+  position: absolute;
+  top: 12%;
+  margin-left: 37%;
+}
+.logo-img{
+  text-align: center;
+  width: 35rem;;
+
+  height: 24rem;
+
+}
+
+
+.slider {
+  width: 20%;
+  height: 70vh;
+ opacity: 0.8;
+}
+.slider:hover{
+  opacity: 1;
+}
+
+.right-arrow {
+  
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slidee {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slidee.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
